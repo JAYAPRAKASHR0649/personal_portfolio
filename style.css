@@ -1,0 +1,193 @@
+*{
+    scroll-behavior: smooth;
+}
+.body{
+    color: #ffffff;
+}
+.menubar{
+    padding-inline-start: 40px;
+    overflow: hidden;
+    position: fixed;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: black;
+    background-color: black;
+}
+.menubar a{
+    padding-left: 30px;
+    font-weight: 600;
+    color: white;
+    padding-inline-start: 120px;
+    justify-content: center;
+    padding-inline-end: 120px;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    transition: color 0.3s ease;
+} 
+.menubar a:hover{
+    color: #0a70f5;
+}
+h1{
+    padding-top: 5px;
+}
+.profile img{
+    width:300px;
+    height:300px;
+    padding-left: 40px;
+    display: flex;
+}
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    padding-top: 14px;
+    
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Developer";
+    color: #0a70f5;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #ffffff;
+    border-left: 2px solid wh;
+    right: -8px;
+    animation: cursor 1s steps(2) infinite, typing 20s linear infinite;
+}
+
+@keyframes cursor {
+    0%, 50% {
+        border-left: 2px solid transparent;
+    }
+    25%, 75% {
+        border-left: 2px solid white;
+    }
+}
+
+@keyframes words {
+    0% {
+        content: "MERN stack developer";
+    }
+    50% {
+        content: "MEAN stack developer";
+    }
+    100% {
+        content: "MERN stack developer";
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: calc(100% + 8px);
+    }
+    40% {
+        width: 0;
+    }
+    60% {
+        width: calc(100% + 8px);
+    }
+    80% {
+        width: 0;
+    }
+    100% {
+        width: calc(100% + 8px);
+    }
+}
+.aboutme p{
+    color: black;
+    text-shadow: none;
+    word-spacing: 5px;
+    font-size: large;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.education h6{
+    color: darkgreen;
+    font-size: larger;
+    padding-left: 10px;
+}
+.education h5{
+    font-size: larger;
+    color:#0a70f5;
+    padding-left: 5px;
+}
+.education p{
+    font-size: large;
+    color: black;
+    padding-left: 5px;
+}
+.education hr{
+    width: 400px;
+    margin: 0%;
+    margin-left: 0%;
+    color:#0a70f5;
+}
+.education h2{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Certifications h2{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Certifications a{
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Segoe UI';
+    line-height: 4;
+    color: #0a70f5;
+    font-weight: 700;
+}
+.icons i{
+    text-decoration: none;
+    font-size: 40px;
+    padding-inline-start: 53px;
+    transition: color 0.3s ease;
+}
+.icons i:hover{
+    color: #0a70f5;
+    font-weight: 700;
+}
+.icons li{
+    line-height: 2.2;
+    color: black;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+    font-weight: 500;
+    transition:  0.3s ease;
+}
+.icons li:hover{
+    color: #0a70f5;
+    font-weight: 900;
+}
+.links{
+    padding-top: 10px;
+    font-weight: 800;
+}
+.links a{
+    text-decoration: none;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+    border-color:transparent;
+    border-radius: 25px;
+    border-style: ridge;
+    transition: color 0.3s ease;
+    font-weight: 800;
+    font-family: 'Segoe UI';
+}
+.links a:hover{
+    border-color: #0a70f5;
+}
