@@ -36,76 +36,6 @@ h1{
     padding-left: 40px;
     display: flex;
 }
-.animated-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-    padding-top: 14px;
-    
-}
-
-.animated-text span{
-    position: relative;
-}
-
-.animated-text span::before{
-    content: "Developer";
-    color: #0a70f5;
-    animation: words 20s infinite;
-}
-
-.animated-text span::after {
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    background-color: #ffffff;
-    border-left: 2px solid wh;
-    right: -8px;
-    animation: cursor 1s steps(2) infinite, typing 20s linear infinite;
-}
-
-@keyframes cursor {
-    0%, 50% {
-        border-left: 2px solid transparent;
-    }
-    25%, 75% {
-        border-left: 2px solid white;
-    }
-}
-
-@keyframes words {
-    0% {
-        content: "MERN stack developer";
-    }
-    50% {
-        content: "MEAN stack developer";
-    }
-    100% {
-        content: "MERN stack developer";
-    }
-}
-
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    20% {
-        width: calc(100% + 8px);
-    }
-    40% {
-        width: 0;
-    }
-    60% {
-        width: calc(100% + 8px);
-    }
-    80% {
-        width: 0;
-    }
-    100% {
-        width: calc(100% + 8px);
-    }
-}
 .aboutme p{
     color: black;
     text-shadow: none;
@@ -190,4 +120,20 @@ h1{
 }
 .links a:hover{
     border-color: #0a70f5;
+}
+
+div.desingnation p{
+    transition: 2s;
+    color: #0a70f5;
+    font-size: larger;
+    font-family: 'Segoe UI';
+    transition-duration: 300ms;
+    font-weight: 900;
+
+}
+.im p{
+    color: #0a70f5;
+    font-size:x-large;
+    font-family: fantasy;
+    font-weight: 900;
 }
